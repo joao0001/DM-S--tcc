@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>DM System</title>
+
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300'  type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=../style.css>
+    <link rel="stylesheet" href=styleLogin.css>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/data.js"></script>
+		<script src="../main.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Marmore', 3],
+          ['Granito', 8]
+          
+        ]);
+
+        // Set chart options
+        var options = {'title':'Matéria-prima em Estoque',
+                       'width':600,
+                       'height':500};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+		
+		
+		
+
+	</head>
+	<body>
+		<!-- Cabeçalho -->
+		<div class="header">
+			<div class="logo">
+				<img src="../img/logo.jpg" class="img-logo2">
+				<span>LOGIN</span>
+			</div>
+			<a href="#" class="nav-trigger"><span></span></a>
+		</div>
+
+		<!-- Menu de navegação-->
+		<div class="side-nav">
+			<div class="logo">
+				<img src="../img/logo.jpg" class="img-logo1">
+				<span>LOGIN</span>
+			</div>
+			<nav>
+				<ul>
+					<li>
+            <a>
+							<span><i class="fa fa-lock icon"></i></span>
+							
+						</a>
+					</li>
+					<li >
+            <a>
+							<span><i class="fa fa-lock icon" ></i></span>
+							
+					</li>
+					<li >
+            <a>
+							<span><i class="fa fa-lock icon"></i></span>
+							
+						</a>
+					</li>
+					<li>
+						<a>
+
+						<span><i class="fa fa-lock icon"></i></span>
+							
+						</a>
+					</li>
+					<li>
+						<a>
+							<span><i class="fa fa-lock icon"></i></span>
+							
+						</a>
+					</li>
+					<li>
+						<a>
+              	<span><i class="fa fa-lock icon"></i></span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main-content">
+			<div class="main">
+			<div class="container mt-3" style="margin-left:-1%;padding:110px 16px;height:1000px;">
+
+			<form class="formulario" method="post" action="login.php">
+	            <p> Faça seu Login </p>
+        
+        <div class="field">
+            <label for="nome">User:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+        
+        <div class="field">
+            <label for="senha">Senha:</label>
+            <input type="text" id="senha" name="senha" placeholder="senha">
+        </div>
+ 
+       
+        <input type="submit" name="acao" value="Enviar">
+    </form>
+			</div>	
+			</div>
+		</div>
+	</body>
+</html>

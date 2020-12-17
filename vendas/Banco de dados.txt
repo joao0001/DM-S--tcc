@@ -1,0 +1,13 @@
+CREATE TABLE vendas(
+  id_vendas int(11) NOT NULL AUTO_INCREMENT,
+  cliente varchar(50) NOT NULL,
+  desc_venda varchar(24) NOT NULL,
+  valor char(50) NOT NULL,
+  endereco varchar(54) NOT NULL,
+  cpf int(54) NOT NULL,
+  data_v  date NOT NULL,
+  data_e  date NOT NULL,
+  
+  PRIMARY KEY (id_vendas)
+
+);

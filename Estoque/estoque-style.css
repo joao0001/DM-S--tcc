@@ -1,0 +1,107 @@
+	.formulario{
+    width: 400px;
+    padding: 30px;
+    border:1px solid #ccc;
+    margin: 0 auto;
+}
+.formulario p{
+    width: 100%;
+    font-size: 1.5em;
+}
+.field{
+    width: 100%;
+    margin: 20px 0;
+}
+.field label, 
+.field span{
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+input#nao{
+    margin-left: 30px;
+}
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;
+    background-color: #2E64FE;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+   color: white;
+
+}
+		
+	details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: #2E64FE;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+  color: white;
+}	
+		td, tr {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #ffbc00;
+  color: black;
+  font-family:   "Gadget";
+}
+ 
+tr:nth-child(odd) {
+  background-color: #120a8f;
+  color: white;
+  font-family:  "Gadget";
+}
+ 
+th{
+	background-color:  #35475e;
+   
+}
+ 
+details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: #2E64FE;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+  color: white;
+}
+
+form{
+	background-color: #ffce49;
+   
+}
